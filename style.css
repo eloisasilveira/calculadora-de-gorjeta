@@ -22,17 +22,16 @@ body {
     background-color: var(--green-200);
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
     padding-block: 2.8rem;
 }
 
-main {
+main{
     background-color: var(--white);
     padding: 2rem;
     border-radius: 1.5625rem 1.5625rem 0 0;
-
 }
 
 .conta,
@@ -50,7 +49,7 @@ main {
 }
 
 .conta div,
-.pessoas div {
+.pessoas .input-box {
     margin-top: 0.4rem;
     background-color: var(--green-100);
     padding: 0.4rem 1.2rem;
@@ -62,7 +61,7 @@ main {
 
 .conta input,
 .pessoas input {
-     border: none;
+    border: none;
     text-align: right;
     width: 100%;
     background: none;
@@ -85,9 +84,9 @@ main {
 
 
 
-.gorjeta 
 .gorjeta div {
     margin-top: 1rem;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -166,4 +165,23 @@ main {
     text-transform: uppercase;
     font-size: 1.25rem;
     padding-block: 0.5rem;
+}
+
+@media(min-width: 920px) {
+    main {
+        display: flex;
+        gap: 3rem;
+        padding: 3rem;
+        border-radius: 1.5625rem;
+        max-width: 57.5rem;
+        margin-inline: auto;
+    }
+
+    main section {
+        width: 100%;
+    }
+
+     .gorjeta div {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
