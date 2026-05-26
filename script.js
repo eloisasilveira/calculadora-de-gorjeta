@@ -43,7 +43,14 @@ function receberPorcentagemBotao(evento) {
         }
     })
 
-    
+       if(evento.target.value !== "") {
      porcentagem = parseFloat(evento.target.value) / 100
+    } else {
+        porcentagem = 0
+    }
 
+    calcular()
 }
+
+
+
