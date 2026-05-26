@@ -23,6 +23,8 @@ function receberQuantidadePessoas(evento) {
     } else {
         paragrafoErro.style.display = "none"
         divErro.setAttribute("id", "")
-        pessoas
+        pessoas = Number(evento.target.value)
     }
 }
+
+const botoesGorjeta = document.querySelectorAll(".gorjeta input[type='button']")
